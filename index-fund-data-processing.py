@@ -411,7 +411,7 @@ for line in line_list:
   line = line.strip()
   date = line.split(',')[0]
   date = datetime.strptime(date, '%Y-%m-%d').strftime('%b %-d, %Y')
-  price = line.split(',')[1]
+  price = line.split(',')[4]
   navps[date] = price
 
 if print_json:
