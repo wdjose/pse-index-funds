@@ -164,6 +164,18 @@ for index_fund in list(uitf_index_fund_list.iterrows()):
   
 
 
+# In[9]:
+
+
+# Fix data from 'PNB Phil-Index Tracker Fund'
+raw_file = os.path.join(data_dir, 'PNB Phil-Index Tracker Fund' + '.json')
+with open(raw_file, 'r') as f:
+  raw_dict = json.loads(f.readline().strip())
+raw_dict.pop(' 26, 2016', None)
+with open(raw_file, 'w') as f:
+  json.dump(raw_dict, f)
+
+
 # ## Mutual Fund (MF) Data Extraction
 # 
 # The MF data was scraped using other tools; this section will transform the raw price data into the standard JSON file format used in the UITF section above. 
@@ -177,7 +189,7 @@ for index_fund in list(uitf_index_fund_list.iterrows()):
 # - Philippine Stock Index Fund
 # - Sun Life Prosperity Philippine Stock Index Fund
 
-# In[9]:
+# In[10]:
 
 
 raw_data_dir = 'raw-data'
@@ -186,7 +198,7 @@ if not os.path.exists(data_dir):
   os.makedirs(data_dir)
 
 
-# In[10]:
+# In[11]:
 
 
 # First Metro Save and Learn Equity Fund
@@ -216,7 +228,7 @@ if not os.path.isfile(json_file) or overwrite_mf:
     json.dump(navps, f2)
 
 
-# In[11]:
+# In[12]:
 
 
 # PAMI Equity Index Fund
@@ -246,7 +258,7 @@ if not os.path.isfile(json_file) or overwrite_mf:
     json.dump(navps, f2)
 
 
-# In[12]:
+# In[13]:
 
 
 # Philequity PSE Index Fund
@@ -276,7 +288,7 @@ if not os.path.isfile(json_file) or overwrite_mf:
     json.dump(navps, f2)
 
 
-# In[13]:
+# In[14]:
 
 
 # Philippine Stock Index Fund
@@ -308,7 +320,7 @@ if not os.path.isfile(json_file) or overwrite_mf:
     json.dump(navps, f2)
 
 
-# In[14]:
+# In[15]:
 
 
 # Sun Life Prosperity Philippine Stock Index Fund
@@ -347,7 +359,7 @@ if not os.path.isfile(json_file) or overwrite_mf:
 # This fund is: 
 # - First Metro Equity Exchange-Traded Fund
 
-# In[15]:
+# In[16]:
 
 
 raw_data_dir = 'raw-data'
@@ -356,7 +368,7 @@ if not os.path.exists(data_dir):
   os.makedirs(data_dir)
 
 
-# In[16]:
+# In[17]:
 
 
 # First Metro Equity Exchange-Traded Fund
@@ -390,7 +402,7 @@ if not os.path.isfile(json_file) or overwrite_etf:
 # 
 # The PSEi and PSEi TRI were also scraped / downloaded using other tools and sources. This section will transform the raw price data into the standard JSON file format used in the UITF, MF, and ETF sections above. 
 
-# In[17]:
+# In[18]:
 
 
 raw_data_dir = 'raw-data'
@@ -399,7 +411,7 @@ if not os.path.exists(data_dir):
   os.makedirs(data_dir)
 
 
-# In[18]:
+# In[19]:
 
 
 # PSEi
@@ -429,7 +441,7 @@ if not os.path.isfile(json_file) or overwrite_index:
     json.dump(navps, f2)
 
 
-# In[19]:
+# In[20]:
 
 
 # PSEi Total Return

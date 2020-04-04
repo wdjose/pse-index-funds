@@ -1,10 +1,12 @@
 # Philippine Stock Exchange (PSE) Index Funds Comparison
 
-UITFs are open-ended investment fund pools . Some UITFs are invested in the money market, some in bonds, and others in equities. In particular, so-called "index funds" are passive funds which seek to replicate the Philippine Stock Exchange Index (PSEi), which is a basket of 30 common stocks in the PSE. One would then expect the returns to also mimic the PSEi. 
+_Unit Investment Trust Funds (UITF)_ are open-ended investment fund pools operated by a trustee (usually a bank) where investors can participate by buying units at the Net Asset Value per Unit (NAVPU) for the day. _Mutual Funds (MF)_, on the other hand, are corporations whose purpose is to invest the fund pool. Investors can participate by buying shares of the corporation at the Net Asset Value per Share (NAVPS). Finally, _Exchange-Traded Funds (ETF)_ are funds traded on the stock exchange (with its own ticker symbol); the ETF itself is invested by the issuer into underlying securities. Investors can participate by buying shares of the ETF on the stock exchange. 
+
+Some UITFs and MFs are invested in the money market, some in bonds, and others in equities. In particular, __index funds__ are passive funds which seek to replicate the Philippine Stock Exchange Index (PSEi), which is a basket of 30 common stocks in the PSE. One would then expect the returns to also mimic the PSEi. There are some UITFs and MFs which are index funds. In the Philippines, there is only one ETF at the moment, and it is also an index fund. 
 
 This notebook seeks to explore: are all PSEi index funds created equal? Which ones follow the PSEi most faithfully? When price appreciation and dividends of underlying stocks are taken into account, are UITFs / MFs / ETFs still good value for your money?
 
-Index Funds / Indices Analyzed:
+Index Funds / Indices Analyzed<sup>1</sup> as of April 3, 2020:
 
 Fund / Index Name | Institution | Type 
 --- | --- | ---
@@ -27,6 +29,12 @@ Sun Life Prosperity Philippine Stock Index Fund | Sun Life Asset Management Comp
 First Metro Equity Exchange-Traded Fund | First Metro Asset Management, Inc. | ETF
 PSEi | Philippine Stock Exchange | Index
 PSEi Total Return | Philippine Stock Exchange | Index
+<br />
+
+---
+<sup>1</sup>LandBank Equity [Index] Fund was not included, since it seems LandBank is removing "Index" from the fund's name, and it wasn't mentioned anywhere in the fund information documents that it specifically tracks the PSEi.
+
+
 
 ## Data Sources
 
