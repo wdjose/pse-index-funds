@@ -35,7 +35,6 @@ print_json = False
 # The UITFs included in this analysis are hand-picked below to be specifically "index funds"; their fund information sheets should specifically note that the portfolio track the PSEi composition. 
 # 
 # These funds are: 
-# - ATRAM Philippine Equity Smart Index Fund
 # - BDO Equity Index Fund
 # - BDO PERA Equity Index Fund
 # - BPI Philippine Equity Index Fund
@@ -98,8 +97,7 @@ uitf_fund_list = uitf_fund_list[['Bank', 'Fund Name', 'Bank ID', 'Fund ID']]
 # This is a manual selection (i.e. human-selected) of index equity funds from:
 # uitf_fund_list[["Bank", "Fund Name"]].to_numpy().tolist()
 
-index_fund_name = [['ATRAM Trust Corporation', 'ATRAM Philippine Equity Smart Index Fund'],
- ['BDO Unibank, Inc.', 'BDO EQUITY INDEX FUND'],
+index_fund_name = [['BDO Unibank, Inc.', 'BDO EQUITY INDEX FUND'],
  ['BDO Unibank, Inc.', 'BDO PERA EQUITY INDEX FUND'],
  ['BPI Asset Management and Trust Corporation', 'BPI Philippine Equity Index Fund'],
  ['CTBC Bank (Philippines) Corp.', 'CTBC Bank - Sun Life Philippine Stock Index Feeder Fund'],
@@ -183,7 +181,6 @@ with open(raw_file, 'w') as f:
 # The MFs included in this analysis are hand-picked below to be specifically "index funds"; their fund information sheets should specifically note that the portfolio track the PSEi composition. 
 # 
 # These funds are: 
-# - First Metro Save and Learn Equity Fund
 # - PAMI Equity Index Fund
 # - Philequity PSE Index Fund
 # - Philippine Stock Index Fund
@@ -199,36 +196,6 @@ if not os.path.exists(data_dir):
 
 
 # In[11]:
-
-
-# First Metro Save and Learn Equity Fund
-
-fund_name = 'First Metro Save and Learn Equity Fund'
-raw_file = os.path.join(raw_data_dir, fund_name + '.txt')
-json_file = os.path.join(data_dir, fund_name + '.json')
-
-navps = dict()
-with open(raw_file, 'r') as f1:
-  line_list = f1.readline().strip()[2:-2].split('],[')
-
-for line in line_list:
-  line = line.strip()
-  date = int(line.split(',')[0]) // 1000
-  date = datetime.utcfromtimestamp(date).strftime('%b %-d, %Y')
-  price = line.split(',')[1]
-  navps[date] = price
-
-if print_json:
-  print(fund_name)
-  print(json.dumps(navps))
-  print('')
-
-if not os.path.isfile(json_file) or overwrite_mf:
-  with open(json_file, 'w') as f2:
-    json.dump(navps, f2)
-
-
-# In[12]:
 
 
 # PAMI Equity Index Fund
@@ -258,7 +225,7 @@ if not os.path.isfile(json_file) or overwrite_mf:
     json.dump(navps, f2)
 
 
-# In[13]:
+# In[12]:
 
 
 # Philequity PSE Index Fund
@@ -288,7 +255,7 @@ if not os.path.isfile(json_file) or overwrite_mf:
     json.dump(navps, f2)
 
 
-# In[14]:
+# In[13]:
 
 
 # Philippine Stock Index Fund
@@ -320,7 +287,7 @@ if not os.path.isfile(json_file) or overwrite_mf:
     json.dump(navps, f2)
 
 
-# In[15]:
+# In[14]:
 
 
 # Sun Life Prosperity Philippine Stock Index Fund
@@ -359,7 +326,7 @@ if not os.path.isfile(json_file) or overwrite_mf:
 # This fund is: 
 # - First Metro Equity Exchange-Traded Fund
 
-# In[16]:
+# In[15]:
 
 
 raw_data_dir = 'raw-data'
@@ -368,7 +335,7 @@ if not os.path.exists(data_dir):
   os.makedirs(data_dir)
 
 
-# In[17]:
+# In[16]:
 
 
 # First Metro Equity Exchange-Traded Fund
@@ -402,7 +369,7 @@ if not os.path.isfile(json_file) or overwrite_etf:
 # 
 # The PSEi and PSEi TRI were also scraped / downloaded using other tools and sources. This section will transform the raw price data into the standard JSON file format used in the UITF, MF, and ETF sections above. 
 
-# In[18]:
+# In[17]:
 
 
 raw_data_dir = 'raw-data'
@@ -411,7 +378,7 @@ if not os.path.exists(data_dir):
   os.makedirs(data_dir)
 
 
-# In[19]:
+# In[18]:
 
 
 # PSEi
@@ -441,7 +408,7 @@ if not os.path.isfile(json_file) or overwrite_index:
     json.dump(navps, f2)
 
 
-# In[20]:
+# In[19]:
 
 
 # PSEi Total Return
@@ -452,7 +419,7 @@ json_file = os.path.join(data_dir, fund_name + '.json')
 
 navps = dict()
 with open(raw_file, 'r') as f1:
-  line_list = f1.readlines()[1:]
+  line_list = f1.readlines()
 
 for line in line_list:
   line = line.strip()

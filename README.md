@@ -6,11 +6,10 @@ Some UITFs and MFs are invested in the money market, some in bonds, and others i
 
 This notebook seeks to explore: are all PSEi index funds created equal? Which ones follow the PSEi most faithfully? When price appreciation and dividends of underlying stocks are taken into account, are UITFs / MFs / ETFs still good value for your money?
 
-Index Funds / Indices Analyzed<sup>1</sup> as of April 3, 2020:
+Index Funds / Indices Analyzed as of April 3, 2020:
 
 Fund / Index Name | Institution | Type 
 --- | --- | ---
-ATRAM Philippine Equity Smart Index Fund | ATRAM Trust Corporation | UITF
 BDO Equity Index Fund | BDO Unibank, Inc. | UITF
 BDO PERA Equity Index Fund | BDO Unibank, Inc. | UITF
 BPI Philippine Equity Index Fund | BPI Asset Management and Trust Corporation | UITF
@@ -21,7 +20,6 @@ PNB Phil-Index Tracker Fund | Philippine National Bank | UITF
 SB Philippine Equity Index Fund | Security Bank Corporation | UITF
 UnionBank Philippine Equity Index Portfolio | UnionBank | UITF
 UCPB Philippine Index Equity Fund | United Coconut Planters Bank | UITF
-First Metro Save and Learn Equity Fund | First Metro Asset Management, Inc. | MF
 PAMI Equity Index Fund | Philam Asset Management, Inc. | MF
 Philequity PSE Index Fund | Philequity Management, Inc. | MF
 Philippine Stock Index Fund | BPI Investment Management, Inc. | MF
@@ -32,7 +30,9 @@ PSEi Total Return | Philippine Stock Exchange | Index
 <br />
 
 ---
-<sup>1</sup>LandBank Equity [Index] Fund was not included, since it seems LandBank is removing "Index" from the fund's name, and it wasn't mentioned anywhere in the fund information documents that it specifically tracks the PSEi.
+Additional Notes on Index Funds Selection and Omission:
+- ATRAM Philippine Equity Smart Index Fund was removed even though it as "Index" in its name, since it mentions in its information disclosure sheet that it combines elements of passive and active management.   
+- LandBank Equity [Index] Fund was not included, since it seems LandBank is removing "Index" from the fund's name, and it wasn't mentioned anywhere in the fund information documents that it specifically tracks the PSEi.
 
 
 
@@ -42,10 +42,6 @@ PSEi Total Return | Philippine Stock Exchange | Index
   - Exact URL: http://www.uitf.com.ph/fund-matrix.php
   - I performed web scraping to extract the pricing data. 
   - No terms and conditions regarding web scraping was found on the website. 
-- For First Metro Save and Learn Equity Fund [MF]: https://fami.com.ph
-  - Exact URL: https://fami.com.ph/mutual-fund/save-learn-equity-fund
-  - I performed web scraping to extract the pricing data. 
-  - No terms and conditions regarding web scraping were found on the website. 
 - For PAMI Equity Index Fund [MF]: https://www.philamfunds.com
   - Exact URL: https://www.philamfunds.com/en/our-products/equity/pami-equity-index-fund.html
   - I directly copy-pasted the prices, which Philam releases without restrictions. 
@@ -64,7 +60,7 @@ PSEi Total Return | Philippine Stock Exchange | Index
   - No terms and conditions regarding web scraping were found on the website, only copyright claims allowing for personal/non-commercial use. 
 - For First Metro Equity Exchange-Traded Fund [ETF]: https://fami.com.ph
   - Exact URL: https://fami.com.ph/first-metro-exchange-traded-fund
-  - I performed web scraping to extract the pricing data. 
+  - I performed web scraping to extract the pricing data. Stock price adjustment was done to take into account two stock dividends given by FMETF in 2017 and 2018. 
   - No terms and conditions regarding web scraping were found on the website. 
 - For the PSEi: https://finance.yahoo.com
   - Exact URL: https://finance.yahoo.com/quote/PSEI.PS/history
