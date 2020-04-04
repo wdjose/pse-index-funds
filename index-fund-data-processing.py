@@ -173,6 +173,14 @@ raw_dict.pop(' 26, 2016', None)
 with open(raw_file, 'w') as f:
   json.dump(raw_dict, f)
 
+# Fix data from 'PNB Phil-Index Tracker Fund'
+raw_file = os.path.join(data_dir, 'UCPB Philippine Index Equity Fund' + '.json')
+with open(raw_file, 'r') as f:
+  raw_dict = json.loads(f.readline().strip())
+raw_dict['Jun 10, 2019'] = '1.1472'
+with open(raw_file, 'w') as f:
+  json.dump(raw_dict, f)
+
 
 # ## Mutual Fund (MF) Data Extraction
 # 
