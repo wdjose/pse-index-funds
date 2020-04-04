@@ -173,11 +173,19 @@ raw_dict.pop(' 26, 2016', None)
 with open(raw_file, 'w') as f:
   json.dump(raw_dict, f)
 
-# Fix data from 'PNB Phil-Index Tracker Fund'
+# Fix data from 'UCPB Philippine Index Equity Fund'
 raw_file = os.path.join(data_dir, 'UCPB Philippine Index Equity Fund' + '.json')
 with open(raw_file, 'r') as f:
   raw_dict = json.loads(f.readline().strip())
 raw_dict['Jun 10, 2019'] = '1.1472'
+with open(raw_file, 'w') as f:
+  json.dump(raw_dict, f)
+
+# Fix data from 'CTBC Bank - Sun Life Philippine Stock Index Feeder Fund'
+raw_file = os.path.join(data_dir, 'CTBC Bank - Sun Life Philippine Stock Index Feeder Fund' + '.json')
+with open(raw_file, 'r') as f:
+  raw_dict = json.loads(f.readline().strip())
+raw_dict['Sep 19, 2019'] = '0.99575'
 with open(raw_file, 'w') as f:
   json.dump(raw_dict, f)
 
