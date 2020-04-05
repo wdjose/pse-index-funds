@@ -8,25 +8,26 @@ This notebook seeks to explore: are all PSEi index funds created equal? Which on
 
 Index Funds / Indices Analyzed as of April 3, 2020:
 
-Fund / Index Name | Institution | Type 
---- | --- | ---
-BDO Equity Index Fund | BDO Unibank, Inc. | UITF
-BDO PERA Equity Index Fund | BDO Unibank, Inc. | UITF
-BPI Philippine Equity Index Fund | BPI Asset Management and Trust Corporation | UITF
-CTBC Bank - Sun Life Philippines Stock Index Feeder Fund | CTBC Bank (Philippines) Corp. | UITF
-EastWest PSEi Tracker Fund | EastWest Banking Corporation | UITF
-Metro Philippine Equity Index Tracker Fund | Metropolitan Bank & Trust Co. | UITF
-PNB Phil-Index Tracker Fund | Philippine National Bank | UITF
-SB Philippine Equity Index Fund | Security Bank Corporation | UITF
-UnionBank Philippine Equity Index Portfolio | UnionBank | UITF
-UCPB Philippine Index Equity Fund | United Coconut Planters Bank | UITF
-PAMI Equity Index Fund | Philam Asset Management, Inc. | MF
-Philequity PSE Index Fund | Philequity Management, Inc. | MF
-Philippine Stock Index Fund | BPI Investment Management, Inc. | MF
-Sun Life Prosperity Philippine Stock Index Fund | Sun Life Asset Management Company, Inc. | MF
-First Metro Equity Exchange-Traded Fund | First Metro Asset Management, Inc. | ETF
-PSEi | Philippine Stock Exchange | Index
-PSEi Total Return | Philippine Stock Exchange | Index
+| Fund / Index Name | Institution | Type |
+| --- | --- | --- |
+| BDO Equity Index Fund | BDO Unibank, Inc. | UITF | |
+| BDO PERA Equity Index Fund | BDO Unibank, Inc. | UITF |
+| BPI Philippine Equity Index Fund | BPI Asset Management and Trust Corporation | UITF |
+| CTBC Bank - Sun Life Philippines Stock Index Feeder Fund | CTBC Bank (Philippines) Corp. | UITF |
+| EastWest PSEi Tracker Fund | EastWest Banking Corporation | UITF |
+| Metro Philippine Equity Index Tracker Fund | Metropolitan Bank & Trust Co. | UITF |
+| PNB Phil-Index Tracker Fund | Philippine National Bank | UITF |
+| SB Philippine Equity Index Fund | Security Bank Corporation | UITF |
+| UnionBank Philippine Equity Index Portfolio | UnionBank | UITF |
+| UCPB Philippine Index Equity Fund | United Coconut Planters Bank | UITF |
+| PAMI Equity Index Fund | Philam Asset Management, Inc. | MF |
+| Philequity PSE Index Fund | Philequity Management, Inc. | MF |
+| Philippine Stock Index Fund | BPI Investment Management, Inc. | MF |
+| Sun Life Prosperity Philippine Stock Index Fund | Sun Life Asset Management Company, Inc. | MF |
+| First Metro Equity Exchange-Traded Fund | First Metro Asset Management, Inc. | ETF |
+| PSEi | Philippine Stock Exchange | Index |
+| PSEi Total Return | Philippine Stock Exchange | Index |
+
 <br />
 
 ---
