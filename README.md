@@ -10,7 +10,7 @@ Index Funds / Indices Analyzed as of April 3, 2020:
 
 | Fund / Index Name | Institution | Type |
 | --- | --- | --- |
-| BDO Equity Index Fund | BDO Unibank, Inc. | UITF | |
+| BDO Equity Index Fund | BDO Unibank, Inc. | UITF |
 | BDO PERA Equity Index Fund | BDO Unibank, Inc. | UITF |
 | BPI Philippine Equity Index Fund | BPI Asset Management and Trust Corporation | UITF |
 | CTBC Bank - Sun Life Philippines Stock Index Feeder Fund | CTBC Bank (Philippines) Corp. | UITF |
