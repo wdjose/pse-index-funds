@@ -20,6 +20,7 @@ Index Funds / Indices Analyzed as of April 3, 2020:
 | SB Philippine Equity Index Fund | Security Bank Corporation | UITF |
 | UnionBank Philippine Equity Index Portfolio | UnionBank | UITF |
 | UCPB Philippine Index Equity Fund | United Coconut Planters Bank | UITF |
+| First Metro Save and Learn Philippine Index Fund | First Metro Asset Management, Inc. | MF |
 | PAMI Equity Index Fund | Philam Asset Management, Inc. | MF |
 | Philequity PSE Index Fund | Philequity Management, Inc. | MF |
 | Philippine Stock Index Fund | BPI Investment Management, Inc. | MF |
@@ -34,6 +35,7 @@ Index Funds / Indices Analyzed as of April 3, 2020:
 Additional Notes on Index Funds Selection and Omission:
 - ATRAM Philippine Equity Smart Index Fund was removed even though it has "Index" in its name, since it mentions in its information disclosure sheet that it combines elements of passive and active management.   
 - LandBank Equity [Index] Fund was not included, since it seems LandBank is removing "Index" from the fund's name, and it wasn't mentioned anywhere in the fund information documents that it specifically tracks the PSEi.
+- First Metro Save and Learn Philippine Index Fund was subsequently added to the list, since its fund information sheet says its goal is to track the index.
 
 
 
@@ -51,8 +53,8 @@ From my qualitative analysis of the price data, the following funds which seem t
 
 ### Worst-Performing Index Funds:
 
+1. __First Metro Save and Learn Philippine Index Fund__: This First Metro Index Mutual Fund has the worst performance among all index funds. Even though it has the same supporting institution as FMETF, it is very perplexing to see such bad performance that I'm wondering if it really is an actively managed fund (and not an index fund). Nevertheless, I am adding this fund to the list to illustrate how some index funds are inherently bad in tracking the index.
 1. __PNB Phil-Index Tracker Fund__: If FMETF is a positive outlier, then this PNB index fund is clearly a negative outlier. It is one of only three funds around for greater than 12 years, but it has miserably failed to track the PSEi compared to its contemporaries, Philequity PSE Index Fund and Philippine Stock Index Fund. There is some reason for hope though; during the past year, though its performance is still among the worst, it doesn't seem like an outlier anymore. 
-
 1. __BDO PERA Equity Index Fund__: This is a special kind of UITF index fund since it serves only Personal Equity and Retirement Account (PERA) investments. Its biggest advantage is the fund's tax-exempt status, so this should yield a higher return than the regular BDO Equity Index Fund, right? Unfortunately, this is also clearly an negative outlier, and since inception it is even much worse than the PNB index fund. My guess is that since PERA is unpopular (probably due to weak marketing, pending implementing rules and regulations, and tedious application process), the fund size is too small that the expense ratio is much greater than their regular index fund. Indeed, according to the latest KIIDS, the PERA fund has a Net Asset Value (NAV) of only &#8369; 31M vs the regular fund's NAV of &#8369; 4.4B. I hope this improves in the future. 
 
 ### Caveats: 
@@ -106,6 +108,10 @@ The price data were gathered from each funds' inception date up to April 3, 2020
   - Exact URL: http://www.uitf.com.ph/fund-matrix.php
   - I performed web scraping to extract the pricing data. 
   - No terms and conditions regarding web scraping was found on the website. 
+- For Philequity PSE Index Fund [MF]: https://www.philequity.net
+  - Exact URL: https://www.philequity.net/pefi_historicalnavps.php
+  - I performed web scraping to extract the pricing data.
+  - No terms and conditions regarding web scraping were found on the website.
 - For PAMI Equity Index Fund [MF]: https://www.philamfunds.com
   - Exact URL: https://www.philamfunds.com/en/our-products/equity/pami-equity-index-fund.html
   - I directly copy-pasted the prices, which Philam releases without restrictions. 
